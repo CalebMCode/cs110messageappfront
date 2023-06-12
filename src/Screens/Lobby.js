@@ -129,7 +129,7 @@ class Lobby extends react.Component {
   enter = (name) => {
     fetch(this.props.server_url + "/api/rooms/enter", {
       method: "POST",
-      mode: "cors",
+      mode: "no-cors",
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
