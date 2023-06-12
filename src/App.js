@@ -35,7 +35,7 @@
 
 // export default App;
 
-import React, { useState, useEffect, useLayoutEffect, useRef } from "react";
+import React from "react";
 import "./App.css";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -51,11 +51,11 @@ import "@fontsource/roboto/700.css";
 
 import ScreenHandler from "./ScreenHandler";
 
-let reached = false;
-let adjusting = 0;
+//let reached = false;
+//let adjusting = 0;
 
 function App() {
-  const [selectedScreen, setSelectedScreen] = React.useState(0);
+  //const [selectedScreen, setSelectedScreen] = React.useState(0);
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
   const [mode, setMode] = React.useState("light");
 
