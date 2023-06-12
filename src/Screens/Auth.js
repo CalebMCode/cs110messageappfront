@@ -61,7 +61,7 @@ class Auth extends react.Component {
 
     fetch(this.props.server_url + "/api/auth/login", {
       method: "POST",
-      mode: "no-cors",
+      mode: "cors",
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
@@ -85,7 +85,7 @@ class Auth extends react.Component {
     console.log(data);
     fetch(this.props.server_url + "/api/auth/signup", {
       method: "POST",
-      mode: "no-cors",
+      mode: "cors",
       credentials: "include",
       headers: {
         "Content-Type": "application/json",
